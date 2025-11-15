@@ -1,3 +1,4 @@
+import { Menu } from "lucide-react";
 import React from "react";
 
 const Navbar = () => {
@@ -23,33 +24,30 @@ const Navbar = () => {
           </div>
           {/* Nav Links  */}
           <div
-            className="flex items-center  space-x-6
+            className=" hidden md:flex items-center  space-x-6
           lg:space-x-8"
           >
             <a
               href="#"
               className="text-gray-300 hover:text-white text0-sm lg:text-base"
             >
-              
               Features
             </a>
             <a
               href="#"
               className="text-gray-300 hover:text-white text0-sm lg:text-base"
             >
-              
-              Pricing 
+              Pricing
             </a>
             <a
               href="#"
               className="text-gray-300 hover:text-white text0-sm lg:text-base"
             >
-              
               Testimonials
             </a>
           </div>
-          <button>
-            
+          <button className="md:hidden p-2 text-gray-300 hover:text-white ">
+            <Menu className="w-5 h-5 sm:h-6 sm:w-6 " />
           </button>
         </div>
       </div>
