@@ -1,7 +1,9 @@
-import { Menu } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import React from "react";
+import { useState } from "react";
 
 const Navbar = () => {
+  const [mobileMenuIsOpen, setMobileMenuIsOpen] = useState(false);
   return (
     <nav className="fixed w-full z-50 top-0 transition-all duration-300 bg-slate-950/20 backdrop-blur-sm">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -46,11 +48,42 @@ const Navbar = () => {
               Testimonials
             </a>
           </div>
-          <button className="md:hidden p-2 text-gray-300 hover:text-white ">
-            <Menu className="w-5 h-5 sm:h-6 sm:w-6 " />
+          <button
+            className="md:hidden p-2 text-gray-300 hover:text-white "
+            onClick={() => setMobileMenuIsOpen((prev) => !prev)}
+          >
+            {mobileMenuIsOpen ? (
+              <X className="w-5 h-5 sm:h-6 sm:w-6 " />
+            ) : (
+              <Menu className="w-5 h-5 sm:h-6 sm:w-6 " />
+            )}
           </button>
         </div>
       </div>
+      {mobileMenuIsOpen && (
+        <div className="md:hidden bg-slate-900/95 backdrop-blur-lg border-t border-slate-800 animate-in slide-in-from-top">
+          <div className="">
+            <a
+              href="#"
+              className="text-gray-300 hover:text-white text0-sm lg:text-base"
+            >
+              Features
+            </a>
+            <a
+              href="#"
+              className="text-gray-300 hover:text-white text0-sm lg:text-base"
+            >
+              Pricing
+            </a>
+            <a
+              href="#"
+              className="text-gray-300 hover:text-white text0-sm lg:text-base"
+            >
+              Testimonials
+            </a>
+          </div>
+        </div>
+      )}
     </nav>
   );
 };
