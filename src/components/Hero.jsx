@@ -1,3 +1,4 @@
+import { ChevronDown } from "lucide-react";
 import React, { useEffect, useState } from "react";
 
 const Hero = () => {
@@ -38,12 +39,13 @@ const Hero = () => {
                 <div className="w-2 h-2 rounded-full bg-green-500 sm:w-3 sm:h-3 " />
               </div>
               <span className="text-xs sm:text-sm text-gray-300">CodeFlow AI</span>
-              <div/>
+              </div>
+              <ChevronDown className="w-3 h-3 sm:w-4 sm:h-4 text-gray-400"/>
             </div>
           </div>
         </div>
       </div>
-      </div>
+      
     </section>
   );
 };
