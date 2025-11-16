@@ -7,6 +7,10 @@
   .slide-in-from-top {
     animation-name: slideinfromtop;
   }
+   .duration-200{
+    animation-duration: 200ms;
+  
+  }
   .duration-300{
     animation-duration: 300ms;
   

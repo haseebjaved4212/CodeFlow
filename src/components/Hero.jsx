@@ -4,6 +4,9 @@ import React, { useEffect, useState } from "react";
 const Hero = () => {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
 
+  const [activeTab, setActiveTab] = useState("App.jsx");
+
+
   useEffect(() => {
     const handleMouseMove = (e) => {
       setMousePosition({ x: e.clientX, y: e.clientY });
@@ -32,20 +35,57 @@ const Hero = () => {
           <div className="bg-linear-to-br from-gray-900/20 to gray-800/20 backdrop-blur-sm rounded-lg  overflow-hidden h-[280px] sm:w-[350px] lg:h-[450px] border border-white/5 ">
             {/* IDE Header */}
             <div className=" flex items-center justify-between px-3 sm:px-4 py-2 sm:py-3 bg-white/5 backdrop-blur-sm border-b border-white/10 ">
-            < div className="flex space-x-2  items-center">
-              <div className="flex sm:space-x-2  space-x-1 items-center">
-                <div className="w-2 h-2 rounded-full bg-red-500 sm:w-3 sm:h-3 " />
-                <div className="w-2 h-2 rounded-full bg-yellow-500 sm:w-3 sm:h-3 " />
-                <div className="w-2 h-2 rounded-full bg-green-500 sm:w-3 sm:h-3 " />
+              <div className="flex space-x-2  items-center">
+                <div className="flex sm:space-x-2  space-x-1 items-center">
+                  <div className="w-2 h-2 rounded-full bg-red-500 sm:w-3 sm:h-3 " />
+                  <div className="w-2 h-2 rounded-full bg-yellow-500 sm:w-3 sm:h-3 " />
+                  <div className="w-2 h-2 rounded-full bg-green-500 sm:w-3 sm:h-3 " />
+                </div>
+                <span className="text-xs sm:text-sm text-gray-300">
+                  CodeFlow AI
+                </span>
               </div>
-              <span className="text-xs sm:text-sm text-gray-300">CodeFlow AI</span>
+              <ChevronDown className="w-3 h-3 sm:w-4 sm:h-4 text-gray-400" />
+            </div>
+            <div className="p-3 sm:p-4 relative h-full ">
+              {/* File Tabs  */}
+              <div className="flex space-x-1 sm:space-x-2  mb-3 sm:mb-4 overflow-auto">
+                <button
+                  onClick={() => setActiveTab("App.jsx")}
+                  className={`px-3 py-2 backdrop-blur-sm tex-xs sm:text-sm rounded-t-lg border  ${
+                    activeTab === "App.jsx"
+                      ? "bg-blue-500/30 text-white border-blue-400/20 hover:bg-blue-500/30"
+                      : "bg-white/5 text-gray-300 border-white/10 hover:bg-white/10"
+                  }  border-white/10 hover:bg-white/10 transition-all duration-200 whitespace-nowrap`}
+                >
+                  App.jsx
+                </button>
+                <button
+                  onClick={() => setActiveTab("Hero.jsx")}
+                  className={`px-3 py-2 backdrop-blur-sm tex-xs sm:text-sm rounded-t-lg border  ${
+                    activeTab === "Hero.jsx"
+                      ? "bg-blue-500/30 text-white border-blue-400/20 hover:bg-blue-500/30"
+                      : "bg-white/5 text-gray-300 border-white/10 hover:bg-white/10"
+                  }  border-white/10 hover:bg-white/10 transition-all duration-200 whitespace-nowrap`}
+                >
+                  Hero.jsx
+                </button>
+                <button
+                  onClick={() => setActiveTab("Navbar.jsx")}
+                  className={`px-3 py-2 backdrop-blur-sm tex-xs sm:text-sm rounded-t-lg border  ${
+                    activeTab === "Navbar.jsx"
+                      ? "bg-blue-500/30 text-white border-blue-400/20 hover:bg-blue-500/30"
+                      : "bg-white/5 text-gray-300 border-white/10 hover:bg-white/10"
+                  }  border-white/10 hover:bg-white/10 transition-all duration-200 whitespace-nowrap`}
+                >
+                  Navbar.jsx
+                </button>
               </div>
-              <ChevronDown className="w-3 h-3 sm:w-4 sm:h-4 text-gray-400"/>
+              {/* Code Content   */}
             </div>
           </div>
         </div>
       </div>
-      
     </section>
   );
 };
