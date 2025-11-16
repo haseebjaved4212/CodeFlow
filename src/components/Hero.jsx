@@ -1,5 +1,8 @@
 import { ChevronDown } from "lucide-react";
 import React, { useEffect, useState } from "react";
+import SyntaxHighlighter from "react-syntax-highlighter";
+import { codeExamples } from "../data/CodeExamples";
+import { nightOwl } from "react-syntax-highlighter/dist/esm/styles/hljs";
 
 const Hero = () => {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
@@ -82,6 +85,12 @@ const Hero = () => {
                 </button>
               </div>
               {/* Code Content   */}
+              <div className="relative overflow-hidden grow ">
+                <SyntaxHighlighter language="javascript" style={nightOwl}>
+                  {codeExamples[activeTab]}
+                </SyntaxHighlighter>
+
+              </div>
             </div>
           </div>
         </div>
