@@ -1,5 +1,6 @@
 @import "tailwindcss";
 
+
 @layer utilities {
   .animate-in {
     animation-fill-mode: both;
@@ -16,6 +17,10 @@
   }
   .duration-700{
     animation-duration: 700ms;
+  
+  }
+  .delay-100{
+    animation-delay: 100ms;
   
   }
   .duration-300{

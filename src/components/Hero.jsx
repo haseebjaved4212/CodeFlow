@@ -34,8 +34,8 @@ const Hero = () => {
       {/*  Skelton  */}
 
       {/* Text  */}
-      <div className="max-w-6xl mx-auto text-center relative w-full ">
-        <div className="max-w-6xl mx-auto flex flex-col lg:grid lg:grid-cols-2 text-center lg:text-left gap-6 sm:gap-8 lg:gap-12 items-center relative">
+      <div className="max-w-7xl mx-auto text-center relative w-full ">
+        <div className="max-w-7xl mx-auto flex flex-col lg:grid lg:grid-cols-2 text-center lg:text-left gap-6 sm:gap-8 lg:gap-12 items-center relative">
           <div>
             <div className="inline-flex items-center space-x-2 px-3 sm:px-4 py-2 bg-blue-500/10 border border-blue-500/20 rounded-full mb-4 sm:mb-6 animate-in slide-in-from-bottom duration-700">
               <Sparkles className="w-4 h-4 sm:w-6 sm:h-6 text-blue-400" />
@@ -54,6 +54,11 @@ const Hero = () => {
                 With CodeFlow AI
               </span>
             </h1>
+            <p className="text-md sm:text-base lg:text-lg text-gray-400 max-w-2xl mx-auto lg:mx-0 mb-6 sm:mb-8 animate-in slide-in-from-bottom duration-700 delay-200 leading-relaxed">
+              Accelerate your development workflow with intelligent code
+              completion, automated testing, and smart debugging. Ship
+              production-ready code 10x faster.
+            </p>
           </div>
           {/* IDE  */}
 
@@ -91,7 +96,7 @@ const Hero = () => {
                       onClick={() => setActiveTab("Hero.jsx")}
                       className={`px-3 py-2 backdrop-blur-sm tex-xs sm:text-sm rounded-t-lg border  ${
                         activeTab === "Hero.jsx"
-                          ? "bg-blue-500/30 text-white border-blue-400/20 hover:bg-blue-500/30"
+                          ? "bg-blue-z500/30 text-white border-blue-400/20 hover:bg-blue-500/30"
                           : "bg-white/5 text-gray-300 border-white/10 hover:bg-white/10"
                       }  border-white/10 hover:bg-white/10 transition-all duration-200 whitespace-nowrap`}
                     >
