@@ -81,6 +81,23 @@ codeflow/
 └── README.md            # This file
 ```
 
+## 📱 Responsive Design Showcase
+
+CodeFlow AI is built to look stunning on all devices. Our responsive design ensures a perfect experience whether you're on a desktop, tablet, or smartphone.
+
+<div align="center">
+
+### Desktop Experience
+![Desktop View](src/assets/Laptop.png)
+
+### Tablet Experience  
+![Tablet View](src/assets/iPad%20Air.png)
+
+### Mobile Experience
+![Mobile View](src/assets/iPhone%2014%20Pro%20Max.png)
+
+</div>
+
 ## 🎯 Key Components
 
 ### Hero Section
@@ -203,4 +220,4 @@ If you have any questions or need help:
 
 ---
 
-**Built with ❤️ by the CodeFlow AI Team**
+**Built with ❤️ by the Haseeb Javed**
