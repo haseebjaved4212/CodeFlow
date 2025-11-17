@@ -35,16 +35,16 @@ const Hero = () => {
 
       {/* Text  */}
       <div className="max-w-7xl mx-auto text-center relative w-full ">
-        <div className="max-w-7xl mx-auto flex flex-col lg:grid lg:grid-cols-2 text-center lg:text-left gap-6 sm:gap-8 lg:gap-12 items-center relative">
+        <div className="max-w-7xl mx-auto flex flex-col lg:grid lg:grid-cols-2 text-center    lg:text-left gap-6 sm:gap-8 lg:gap-12 items-center relative">
           <div>
-            <div className="inline-flex items-center space-x-2 px-3 sm:px-4 py-2 bg-blue-500/10 border border-blue-500/20 rounded-full mb-4 sm:mb-6 animate-in slide-in-from-bottom duration-700">
-              <Sparkles className="w-4 h-4 sm:w-6 sm:h-6 text-blue-400" />
+            <div className="inline-flex  mt-5 items-center space-x-2 px-3 sm:px-4 py-2 bg-blue-500/10 border border-blue-500/20 rounded-full mb-4 sm:mb-6 animate-in slide-in-from-bottom duration-700">
+              <Sparkles className="w-4 h-4 sm:w-6 sm:h-6 text-blue-400 " />
               <span className="text-xs sm:text-sm text-blue-300">
                 Introducing CodeFlow AI
               </span>
             </div>
-            <h1 className="text-5xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-semibold mb-4 sm:mb-6 animate-in slide-in-from-bottom duration-700 delay-100 leading-tight">
-              <span className="bg-linear-to-r from-white via-blue-100 to-cyan-100 bg-clip-text text-transparent block mb-1 sm:mb-2">
+            <h1 className="text-4xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-semibold mb-4 sm:mb-6 animate-in slide-in-from-bottom duration-700 delay-100 leading-tight ">
+              <span className="bg-linear-to-r from-white via-blue-100 to-cyan-100 bg-clip-text text-transparent block mb-1 sm:mb-1 lg:mb-1">
                 Code Faster
               </span>
               <span className="bg-linear-to-b from-blue-400 via-cyan-400 to-blue-400 bg-clip-text text-transparent block mb-1 sm:mb-2">
