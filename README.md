@@ -199,6 +199,7 @@ npm run build
 
 ## 📄 License
 
+- © 2025 Haseeb Javed. All rights reserved.
 
 
 ## 🆘 Support
