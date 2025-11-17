@@ -128,7 +128,7 @@ const Hero = () => {
                     </button>
                   </div>
                   {/* Code Content   */}
-                  <div className="relative overflow-hidden grow ">
+                  <div className="relative overflow-hidden grow  ">
                     <SyntaxHighlighter
                       language="javascript"
                       style={nightOwl}
@@ -139,6 +139,7 @@ const Hero = () => {
                         lineHeight: "1.5",
                         height: "100%",
                         border: "1px solid #3c3c3c",
+                        textAlign: "start"
                       }}
                     >
                       {codeExamples[activeTab]}
