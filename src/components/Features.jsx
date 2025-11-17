@@ -45,11 +45,11 @@ export default function Features() {
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-12 sm:mb-16 lg:mb-20">
           <h2 className="text-5xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6">
-            <span className="bg-gradient-to-b from-white to-gray-300 bg-clip-text text-transparent">
+            <span className="bg-linear-to-b from-white to-gray-300 bg-clip-text text-transparent">
               Your Complete Development
             </span>
             <br />
-            <span className="bg-gradient-to-b from-blue-400 to-cyan-400 bg-clip-text text-transparent">
+            <span className="bg-linear-to-b from-blue-400 to-cyan-400 bg-clip-text text-transparent">
               Workflow
             </span>
           </h2>
@@ -71,7 +71,7 @@ export default function Features() {
                   />
                   <div
                     className="relative bg-gray-900/50 backdrop-blur-sm border border-gray-700/50 
-                  rounded-xl sm:rounded-2xl p-4 sm:p-6 overflow-hidden group-hover:border-1 
+                  rounded-xl sm:rounded-2xl p-4 sm:p-6 overflow-hidden group-hover:border 
                   group-hover:border-blue-600/50 transition-all duration-300"
                   >
                     {/* Ide Interface */}
