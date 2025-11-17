@@ -60,7 +60,7 @@ const Hero = () => {
               production-ready code 10x faster.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-3 sm:gap-4 mb-8 sm:mb-12 animate-in slide-in-from-bottom duration-700 delay-300">
-              <button className="group w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 bg-gradient-to-b from-blue-600 to-blue-400 rounded-lg font-semibold text-sm sm:text-base transition-all duration-300 hover:scale-102 flex items-center justify-center space-x-2">
+              <button className="group w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 bg-linear-to-b from-blue-600 to-blue-400 rounded-lg font-semibold text-sm sm:text-base transition-all duration-300 hover:scale-102 flex items-center justify-center space-x-2">
                 <span>Start Coding Free</span>
                 <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 group-hover:translate-x-1 transition-transform duration-300" />
               </button>
@@ -78,7 +78,7 @@ const Hero = () => {
 
           <div className="relative order-2 w-full">
             <div className="relative bg-white/5 backdrop-brightness-125 backdrop-blur-xl rounded-lg sm:rounded-2xl p-3 sm:p-4 shadow-2xl border border-white/10 ">
-              <div className="bg-linear-to-br from-gray-900/20 to gray-800/20 backdrop-blur-sm rounded-lg  overflow-hidden h-[280px] sm:w-[350px] lg:h-[350px] border border-white/5 ">
+              <div className="bg-linear-to-br from-gray-900/20 to gray-800/20 backdrop-blur-sm rounded-lg  overflow-hidden h-[280px] sm:h-[350px] lg:h-[350px] border border-white/5 ">
                 {/* IDE Header */}
                 <div className=" flex items-center justify-between px-3 sm:px-4 py-2 sm:py-3 bg-white/5 backdrop-blur-sm border-b border-white/10 ">
                   <div className="flex space-x-2  items-center">
@@ -110,7 +110,7 @@ const Hero = () => {
                       onClick={() => setActiveTab("Hero.jsx")}
                       className={`px-3 py-2 backdrop-blur-sm tex-xs sm:text-sm rounded-t-lg border  ${
                         activeTab === "Hero.jsx"
-                          ? "bg-blue-z500/30 text-white border-blue-400/20 hover:bg-blue-500/30"
+                          ? "bg-blue-500/30 text-white border-blue-400/20 hover:bg-blue-500/30"
                           : "bg-white/5 text-gray-300 border-white/10 hover:bg-white/10"
                       }  border-white/10 hover:bg-white/10 transition-all duration-200 whitespace-nowrap`}
                     >
